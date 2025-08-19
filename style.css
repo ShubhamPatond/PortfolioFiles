@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+}
+.container { 
+    max-width: 900px; 
+    margin: 0 auto 40px; 
+    padding: 0 20px;
+}
+nav { 
+    background: #26547c; 
+    color: #fff; 
+    padding: 16px 0; 
+}
+nav .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 24px;
+    margin: 0; padding: 0;
+}
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+header {
+    text-align: center;
+    margin-top: 36px;
+}
+.profile-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    object-fit: cover;
+    border: 4px solid #26547c;
+}
+h1, h2, h3 { color: #26547c; }
+.skills-list, .project ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 12px; 
+    list-style: none; 
+    padding: 0;
+}
+.skills-list li {
+    background: #ef476f;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.project {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(38,84,124,0.08);
+}
+.project a {
+    color: #279af1;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+@media (max-width: 700px) {
+    nav .container, .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        gap: 10px;
+    }
+}
